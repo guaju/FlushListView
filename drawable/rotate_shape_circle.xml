@@ -1,0 +1,18 @@
+  <?xml version="1.0" encoding="utf-8"?>
+  <rotate xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:fromDegrees="0" android:toDegrees="360"
+     android:pivotX="50%"
+     android:pivotY="50%" >
+     <shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="10dp"
+    android:shape="ring"
+    android:thickness="5dp"
+    android:useLevel="false" >// 如果使用了渐变色, 指定false
+    <gradient android:startColor="#ffffff"
+        android:centerColor="#aaff0000"
+        android:endColor="#ff0000"
+        android:type="sweep"
+        />
+    </shape> 
+
+</rotate>
