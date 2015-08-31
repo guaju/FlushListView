@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/common_listview_headview_red_arrow" />
+<!--  这个进度条默认是隐藏的-->
+        <ProgressBar
+            android:id="@+id/pb_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/rotate_shape_circle" />
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_state_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新"
+            android:singleLine="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+         <TextView
+            android:id="@+id/tv_last_refresh_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="最后刷新时间: 2015-7-31 09:19:01"
+            android:textColor="#CCCCCC" />
+    </LinearLayout>
+
+</LinearLayout>
